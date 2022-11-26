@@ -21,9 +21,10 @@ def main():
         int_integer = int(str_integer)
         if int_integer < 0:
             print("This is not a positive number.")
-        for loop_counter in range(int_integer + 1):
-            answer = loop_counter * loop_counter
-            print("{0}² = ".format(loop_counter) + "{0}.".format(answer))
+        else:
+            for loop_counter in range(int_integer + 1):
+                answer = loop_counter * loop_counter
+                print("{0}² = ".format(loop_counter) + "{0}.".format(answer))
     except ValueError:
         print("Invalid integer")
     finally:
